@@ -23,6 +23,10 @@ also, users can easily customize their builds as what they need.
 
 content-builder provides a filter interface, you can register your custom filter directly.
 
+## Install
+
+    npm install content-builder
+
 ## Usage
 
 First, define a simple manifest file called `app.manifest`:
