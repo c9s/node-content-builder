@@ -25,6 +25,16 @@ content-builder provides a filter interface, you can register your custom filter
 
 ## Usage
 
+First, define a simple manifest file called `app.manifest`:
+
+    lib/app.js
+    lib/widget_a.js
+    lib/widget_b.js
+    lib/widget_c.js
+    lib/widgets.js
+
+Then define the code below to compile your content:
+
 ```coffee
 ContentBuilder = require "content-builder"
 builder = new ContentBuilder("app.manifest",{ 
@@ -32,3 +42,4 @@ builder = new ContentBuilder("app.manifest",{
 })
 content = builder.compile()
 ```
+
