@@ -8,5 +8,8 @@
   },
   "repository": "",
   "author": "",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "coffee-script": "~1.4.0"
+  }
 }

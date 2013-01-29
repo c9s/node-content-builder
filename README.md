@@ -32,4 +32,3 @@ builder = new ContentBuilder("app.manifest",{
 })
 content = builder.compile()
 ```
-
