@@ -16,11 +16,13 @@ class ContentBuilder
     @rawContent = fs.readFileSync(file,"utf8")
     @contentList = @rawContent.split /\n/
     @options or= {}
+    @useDefaultFilters()
 
   useDefaultFilters: () ->
     @addFilter /\.js$/,  (file) -> fs.readFileSync(file,"utf8")
     @addFilter /\.coffee/, (file) -> CoffeeScript.compile(fs.readFileSync(file,"utf8"),{ bare: true })
     return this
+
 
   ###
   A filter is registered with a pattern and a callback, 
