@@ -18,8 +18,8 @@ or other AMD tools.
 
 To use require.js or not in application codebase, the decision is made by users, so we made this.
 
-By using `content-builder`, you can define many manifest for different usage, or 
-users can easily customize their builds as what they need.
+By using `content-builder`, you can define many manifest for different usage. 
+also, users can easily customize their builds as what they need.
 
 content-builder provides a filter interface, you can register your custom filter directly.
 
