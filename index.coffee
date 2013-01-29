@@ -74,4 +74,4 @@ class ContentBuilder
     for f in @finalizeFilters
       content = f(content)
     return content
-module.exports = ManifestContent
+module.exports = ContentBuilder

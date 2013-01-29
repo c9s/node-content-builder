@@ -23,3 +23,13 @@ users can easily customize their builds as what they need.
 
 content-builder provides a filter interface, you can register your custom filter directly.
 
+## Usage
+
+```coffee
+ContentBuilder = require "content-builder"
+builder = new ContentBuilder("app.manifest",{ 
+    baseDir: "js"
+})
+content = builder.compile()
+```
+
